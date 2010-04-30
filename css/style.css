@@ -1,0 +1,13 @@
+body {
+	font-family: Verdana;
+}
+
+#page_header ul li {
+	float: left;
+	margin-left: 1em;
+	margin-bottom: 1em;
+}
+
+#page_content {
+	clear: both;
+}

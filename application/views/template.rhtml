@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Aperio</title>
+		<%= Picombo::Html.style('css/style.css') %>
+	</head>
+	<body>
+		<div id="page_header">
+			<h1>Aperio</h1>
+			<ul>
+				<li><a href="<%= Picombo::Url.base %>">Home</a></li>
+				<li><a href="<%= Picombo::Url.site 'user/login' %>">Login</a></li>
+				<li><a href="<%= Picombo::Url.site 'server/index' %>">Servers</a></li>
+			</ul>
+		</div>
+		<div id="page_content">
+			<%= @body %>
+		</div>
+	</body>
+</html>

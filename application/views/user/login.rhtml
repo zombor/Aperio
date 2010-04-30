@@ -1,0 +1,11 @@
+<h2>Login</h2>
+<p>Enter your login information below</p>
+<form action="<%= Picombo::Url.base %>user/login" method="post">
+	<fieldset>
+		<ul>
+			<li><label for="username">Username</label> <input name="username" id="username"></li>
+			<li><label for="password">Password</label> <input type="password" name="password" id="password"></li>
+			<li><input type="submit" value="Login" /></li>
+		</ul>
+	</fieldset>
+</form>
