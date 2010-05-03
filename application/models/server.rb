@@ -3,10 +3,10 @@ module Picombo
 		class Server < Picombo::Model
 			storage_names[:default] = 'servers'
 
-			property :id,               Serial
-			property :hostname,         String, :unique => :u1
-			property :identifier,       String
-			property :default_priority, Integer
+			property :id,                       Serial
+			property :hostname,                 String, :unique => :u1
+			property :identifier,               String
+			property :default_service_priority, Integer
 
 			has n, :services, :model => 'Picombo::Models::Service'
 		end

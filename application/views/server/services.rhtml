@@ -1,0 +1,5 @@
+<h2>Services for <em><%= @server.identifier %></em></h2>
+<p><a href="<%= Picombo::Url.base%>service/create/<%= @server.id %>">Add a Service for <em><%= @server.identifier %></em></a></p>
+<ul>
+	<% @services.each do |service|%><li><%= service %></li><% end %>
+</ul>

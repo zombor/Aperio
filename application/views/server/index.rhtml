@@ -1,0 +1,10 @@
+<h2>Your Servers</h2>
+<% if @servers.count > 0 %>
+<p>Click on a server below to view it's services.</p>
+<ul>
+	<% @servers.each do |server|%><li><a href="<%= Picombo::Url.base%>server/services/<%=server.id%>"><%=server.identifier%></a></li><% end %>
+</ul>
+<p><a href="<%= Picombo::Url.base%>server/create">Create new Server</a></p>
+<% else %>
+<p>You have no servers defined. <a href="<%= Picombo::Url.base%>server/create">Create new Server</a>.</p>
+<% end %>

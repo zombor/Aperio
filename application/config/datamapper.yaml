@@ -1,6 +1,6 @@
 default:
  driver: mysql
  host: localhost
- database: twooter
- username: root
- password: Contract1
+ database: aperio
+ username: aperio
+ password: aperio
