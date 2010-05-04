@@ -4,4 +4,4 @@ xss_clean: true
 extensions:
   [picombo-auth]
 hooks:
-  [datamapper]
+  [datamapper, aperio-core]

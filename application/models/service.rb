@@ -9,6 +9,16 @@ module Picombo
 			property :priority, Integer
 
 			belongs_to :server, :model => 'Picombo::Models::Server'
+
+			@@services = []
+
+			def self.services=(services)
+				@@services+=services
+			end
+
+			def self.options
+				@@services
+			end
 		end
 	end
 end

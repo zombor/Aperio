@@ -1,0 +1,8 @@
+<form action="<%= Picombo::Url.site('service/create/'+@server_id)%>" method="post">
+	<ul>
+		<li><label for="name">Name:</label> <select name="name"><% @service.options.each do |option| %><option value="<%= option %>"><%= option %></option><% end %></select></li>
+		<li><label for="port">Port:</label> <input name="port" id="port" /></li>
+		<li><label for="priority">Service Priority:</label> <input name="priority" id="priority" /></li>
+		<li><input type="submit" value="Submit" />
+	</ul>
+</form>
